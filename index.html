@@ -1,1 +1,250 @@
-Hhello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristen San Martin</title>
+
+    <!-- IMPORT FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@700&display=swap" rel="stylesheet">    
+    <!-- BOOTSTRAP CS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- BOOTSTRAP CS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- LOCAL JS AND CSS -->
+    <script src="assets/js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style/styles.css">
+</head>
+
+
+<body>
+    <div id="wrapper">
+
+        <div class = "page1">
+            <div id="left">
+                <div class = "list_box">
+                    <ul class = "port startHidden ">
+                        <li>Web Development</li>
+                        <li>Mobile Game Design</li>
+                        <li>Android Applications </li>
+                    </ul>
+                    <ul class = "tech startHidden ">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                    <ul class = "who startHidden ">
+                        <li><img class= "who" src ="assets/img/mw.jpg"></li>
+                        <li>Adaptive  /  Capable  /  Unique</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="header">
+                <div class = 'animated_name'>
+                    <h1 class = '1'>K</h1><h1 class = '2'>R</h1><h1 class = '3'>I</h1><h1 class = '4'>S</h1><h1 class = '5'>T</h1><h1 class = '6'>E</h1><h1 class = '7'>N </h1><h1 class = '8'>S</h1><h1 class = '9'>A</h1><h1 class = '10'>N </h1><h1 class = '11'>M</h1><h1 class = '12'>A</h1><h1 class = '13'>R</h1><h1 class = '14'>T</h1><h1 class = '15'>I</h1><h1 class = '16'>N</h1>
+                </div>
+                <h1 class = 'new'>KRISTEN SAN MARTIN</h1>
+                
+                <div id="full">Software Developer</div>
+                <div class="navbar">
+                    <button class = 'navigate' class="port">Portfolio</button>
+                    <button class="tech">Technologies</button>
+                    <button class="who ">Who is she?</button>
+                </div>
+            </div>
+
+            <div id = 'right'><img class="front" src ="assets/img/square-logo.gif"></div></div>
+            
+            <!-- PORTFOLIO -->
+            <!-- Hidden until called-->
+            <div id="portfolio" class = "startHidden">
+
+                <!-- Esmerelda Card -->
+                <div class = "project_card" type="button" data-toggle="modal" data-target="#cat_modal">
+                <img src = "assets/img/esmerelda/es2.png">
+                        <div class = 'desc'>
+                            <h1>Game Design</h1>
+                            <p>C#, Unity, Adobe Creative Suite</p>
+                        </div>
+                    </div>
+
+                <!-- Pets App Card -->
+                <div class = "project_card" type="button" data-toggle="modal" data-target="#pets_modal">
+                    <img src = 'assets/img/pets_app/pets_small.jpg'>
+                    <div class = 'desc'>
+                        <h1>Android Development</h1>
+                        <p>Java, Android Studio, Google Play Store</p>
+                    </div>
+                </div>
+
+                <!-- Mp3 Player Card -->
+                <div class = "project_card" type="button" data-toggle="modal" data-target="#music_modal">
+                    <img src = 'assets/img/music_player/music_small.jpg'>
+                    <div class = 'desc'>
+                        <h1>Desktop Applications</h1>
+                        <p>AutoHotKey, Adobe Creative Suite</p>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- End Portoflio -->
+                
+    </div>
+    <!-- End Wrapper -->
+
+
+
+
+<!-- Modals (window Popups)--> <!-- Todo Implement dynamically --> 
+<!-- Called in portfolio -->
+<!-- PETS APP MODAL -->
+<div class="modal fade" id="pets_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content pets">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">PetsApp</h5>
+                <p>Java, Android Studio, (Available on the Google Play Store)</p>
+                <a href="https://github.com/KISMET-INC/Esmerelda-the-Cat/blob/master/Assets/Scripts/Player%20Scripts/PlayerScore.cs">View Code on GitHub</a>
+            </div>
+
+            <div class="modal-body">
+                <div class = "car">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class ="a" src= "assets/img/pets_app/cake3.jpg" alt="dog eatting cake">
+                                </div>
+                                
+                                <div class="item">
+                                    <img class ="a" src="assets/img/pets_app/pets5.png" alt="petsApp image">
+                                </div>
+                                
+                                <div class="item">
+                                    <img class ="a" src="assets/img/pets_app/pets4.png" alt="petsApp image">
+                                </div>
+                                <div class="item">
+                                    <img class ="a" src="assets/img/pets_app/pets6.png" alt="petsApp image">
+                                </div>
+                            </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>        
+            </div>
+            <!-- end Modal Body -->
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<!-- End Pets Modal -->
+
+
+<!-- ESMERELDA Modal -->
+<div class="modal fade" id="cat_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog cat" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Esmerelda the Cat</h5>
+                <p>C#, Unity, Adobe Creative Suite</p>
+                <p>Help Esmerelda out of the tree. Collect hearts to increase lives. Beware of dead branches! If they break and fall on you you lose a life!</p>
+                <a href="https://github.com/KISMET-INC/Esmerelda-the-Cat/blob/master/Assets/Scripts/Player%20Scripts/PlayerScore.cs">View Code on GitHub</a>
+            </div>
+
+            <div class="modal-body">
+                <video class="modal_vid"  height="350" controls autoplay>
+                    <source src="assets/img/esmerelda/esmerelda-gameplay.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+
+                <!-- Carousel Start-->
+                <div class = "car">
+                    <div id="myCarousel_cat" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class ="a" src= "assets/img/esmerelda/es03.jpg" alt="Esmerelda the Cat">
+                            </div>
+                            
+                            <div class="item">
+                                <img class ="a" src="assets/img/esmerelda/es2.png" alt="Esmerelda the Cat">
+                            </div>
+                            
+                            <div class="item">
+                                <img class ="a" src="assets//img/esmerelda/es01.png" alt="Esmerelda the Cat">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel_cat" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel_cat" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- End Carousel -->
+        </div>
+        <!-- End Body -->
+            
+    </div>
+
+    <div class="modal-footer"></div>
+    </div>
+</div>
+        
+        <!-- End Modal -->
+
+<!-- MUSIC Modal -->
+<div class="modal fade" id="music_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog music" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">MP3 Player</h5>
+                <p>AutoHotKey, Adobe Creative Suite</p>
+                <a href="https://github.com/KISMET-INC/Esmerelda-the-Cat/blob/master/Assets/Scripts/Player%20Scripts/PlayerScore.cs">View Code on GitHub</a>
+            </div>
+
+            <div class="modal-body">
+                <video class="modal_vid"  width= "475" controls autoplay>
+                    <source src="assets/img/music_player/player.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> 
+
+        </div>
+            <div class="modal-footer"></div>
+    </div>
+</div>
+<!-- End Modal -->
+    
+</body>
+</html>
