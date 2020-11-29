@@ -39,7 +39,7 @@ h1{
 
 }
 .page1 {
-    margin-left: 100px;
+    margin-left: 75px;
     padding-top: 30px;
     display:flex;
     justify-content: center;
@@ -79,6 +79,8 @@ li img.who {
 
 .navbar{
     height:fit-content;
+    padding-top: 10px;
+    padding-left: 0px;
 }
 
     .navbar button {
@@ -257,6 +259,8 @@ button.active_button{
 }
 
 .navbar button {
+    width:120px;
+    margin-right: 3px;
     margin-bottom: 10px;
     height: 40px;
 }
