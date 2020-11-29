@@ -6,8 +6,20 @@
     color:rgb(97, 97, 97);
 }
 
+
 body {
     background-color: #121212;
+
+}
+
+body, #wrapper, .page1 {
+    margin: 0 auto;
+-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar, #wrapper::-webkit-scrollbar,.page1::-webkit-scrollbar {
+    display: none;
 }
 
 h1{
@@ -19,19 +31,19 @@ h1{
 
 #wrapper {
     padding-top: 30px;
-    background-image: url("/assets/img/bg2.jpg");
+    background-image: url("../img/bg2.jpg");
     background-size: cover;
     margin-top:50px;
-    height:800px;
+    min-height: 600px;
+    
 
 }
 .page1 {
     padding-top: 30px;
-    height: 400px;
     display:flex;
     justify-content: center;
     align-items:center;
-    border-radius:10px; 
+    border-radius:10px;
 }
 #header{
     z-index: 1;
@@ -45,6 +57,7 @@ h1{
 #full{
     font-size:18px;
     width: fit-content;
+    overflow: hidden;
 }
 ul.who li {
     font-family: 'Glegoo';
@@ -54,10 +67,12 @@ ul.who li {
 }
 
 li img.who {
-    margin-top: -8px;
+    margin-top: 50px;
     border: 3px solid #663c58;
     z-index: -1;
     width: 200px;
+    margin-left: -50px;
+
     border-radius: 10px;
 }
 
@@ -120,8 +135,10 @@ li img.who {
 
 
 .modal-dialog{
-    margin-top: 155px;
+    width: fit-content;
+    margin-top: 75px;
 }
+
 
 li {
     color: white;
@@ -148,6 +165,11 @@ div.front {
     background-color: rgb(39, 39, 39);
 }
 
+#cat_modal_vid {
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 .modal-header{
     color:white;
@@ -160,6 +182,7 @@ div.front {
     width:250px;
 }
 
+  
 
 .modal-footer{
     color:black;
@@ -176,11 +199,12 @@ img.m{
   }
 
 #myCarousel{
-    width:300;
+    margin: 0 auto;
+    width:fit-content;
 }
 
-.modal-body{
-    display:flex;
+.modal-dialog{
+    width: 300px;
 }
 
 .modal-header p {
@@ -190,8 +214,37 @@ img.m{
     display:flex;
     flex-direction:column;
 }
-  
 
+#cat_modal{
+    margin: 0 auto;
+-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#cat_modal::-webkit-scrollbar {
+    display: none;
+}
+
+#cat_modal_vid {
+    height: 400px;
+}
+
+
+#pets_modal{
+    margin: 0 auto;
+    overflow: hidden;
+} 
+
+#music_modal{
+    overflow: hidden;
+ 
+} 
+
+#music_modal_vid{
+margin: 0 auto;
+  width: 275px;
+  height: 400px;
+}
 div.pets{
     width: 275px;
     height: 525px;
@@ -202,6 +255,29 @@ button.active_button{
     border: 2px solid #A6509B;
 }
 
+.navbar button {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    height: 40px;
+}
 
 
 
+@media (max-width: 1000px){
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px){
+    .navbar, #header {
+        margin-left: 200px;
+   }
+    .navbar button {
+        width: 100%;
+        margin-left: 0px;
+    }
+}

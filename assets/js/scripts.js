@@ -38,11 +38,11 @@ $(document).ready(function(){
         var type = $(this).attr('class');
         $(this).css('border','none');
         $(`ul.${type}`).slideUp('fast');
-        $(this).css('color','rgb(97, 97, 97)').css('height','30px').css('font-size', "13px").css('font-family', "Jost")
+        $(this).css('color','rgb(97, 97, 97)').css('height','40px').css('font-size', "13px").css('font-family', "Jost")
     });
 
     /* CLICK */
-    $('.navigate').click(function(){
+    $('.port').click(function(){
         /* stop animated name animations */
         $('h1').stop();
 
@@ -62,7 +62,7 @@ $(document).ready(function(){
             fontSize:'11px'},500       
         );  
         $('#wrapper').animate ({
-            height: '800px'
+            height: '670px'
         })
 
 
@@ -76,7 +76,7 @@ $(document).ready(function(){
         /* Remove items from landing page */
         $('#left').remove().delay(200);
         $('.front').remove();
-        $('.animated_name').remove();
+        $('#animated_name').remove();
         $('#portfolio').children().show();
     });
 
