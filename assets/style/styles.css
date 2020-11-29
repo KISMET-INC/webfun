@@ -39,6 +39,7 @@ h1{
 
 }
 .page1 {
+    margin-left: 100px;
     padding-top: 30px;
     display:flex;
     justify-content: center;
